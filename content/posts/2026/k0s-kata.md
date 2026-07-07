@@ -32,8 +32,7 @@ categories:
 # Set to false when ready to publish
 draft: false
 
-description: "Learn why standard container isolation fails for agentic AI workloads, and how k0s plus Kata Containers closes the gap with hardware-enforced sandboxing
-"
+description: "Learn why standard container isolation fails for agentic AI workloads, and how k0s plus Kata Containers closes the gap with hardware-enforced sandboxing"
 
 # Series information
 series: ["Kubernetes, k0s, kata"]
@@ -48,14 +47,14 @@ schema:
   audience: "Developers, DevOps Engineers, Platform Engineers"
   proficiencyLevel: "Intermediate to Advanced"
 
-image: "images/2026/k0s-wasm/header.png"
+image: "images/2026/k0s-kata/header.png"
 ---
 
 ## Introduction
 
 Getting isolation right for AI workloads is deceptively involved. Your agent, your model server, your MCP server, and the host OS all share one Linux kernel by default. One prompt injection, one compromised model, one container escape CVE, and the failure isn't silent, it's a breach, and nothing in a standard Kubernetes namespace stops it from reaching every other workload on that node.
 
-k0s plus Kata Containers makes hardware isolation tractable for this problem. k0s provides a single binary, FIPS 140-3 capable Kubernetes distribution. Kata replaces the container runtime with a lightweight hypervisor, so every pod gets its own kernel instead of borrowing the host's.
+k0s plus Kata Containers makes hardware isolation tractable for this problem. k0s provides a single-binary Kubernetes distribution and is also available in a FIPS 140-3 capable edition. Kata replaces the container runtime with a lightweight hypervisor, so every pod gets its own kernel instead of borrowing the host's.
 
 In this post, we walk through why namespace-based isolation stops being sufficient once agents enter the picture, how Kata's `RuntimeClass` mechanism gets you VM-level isolation with no application changes, and how k0s underneath it gives you a FIPS-compliant, air-gap capable control plane. The focus is the architecture that makes this deployable rather than a theoretical hardening exercise, backed by named CVEs it actually blocks.
 
