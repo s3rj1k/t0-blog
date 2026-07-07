@@ -95,6 +95,10 @@ Three scenarios make this concrete for AI infrastructure:
 
 Kata Containers replaces `runc`, the standard container runtime, with a hypervisor. Instead of launching a container process that shares the host kernel, it launches a lightweight VM. Your container runs inside that VM, with its own kernel, its own memory space, and a hardware boundary enforced by Intel VT-x or AMD-V at the CPU level.
 
+
+![k0s-kata](../images/2026/k0s-kata/kata.png)
+
+
 The stack comparison:
 
     Standard runc:
