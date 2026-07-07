@@ -270,7 +270,7 @@ That covers the hardware isolation foundation. It doesn't cover the network trus
 - [k0s Documentation](https://docs.k0sproject.io/)
 - [k0s Runtime Documentation](https://docs.k0sproject.io/stable/runtime/)
 - [K0RDENT Documentation](https://docs.k0rdent.io/)
-- [Agents, MCP, and Kubernetes, Part 2: Zero Trust Network Architecture](https://t0.mirantis.com/)
+- [Agents, MCP, and Kubernetes, Part 2: Zero Trust Network Architecture](https://t0.mirantis.com/agents-mcp-on-k8s-pt2/)
 - [NVIDIA GPU Operator Getting Started](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html)
 
 Tags: [Kubernetes](https://t0.mirantis.com/tags/kubernetes/) · [Kata Containers](https://t0.mirantis.com/tags/kata-containers/) · [k0s](https://t0.mirantis.com/tags/k0s/) · [AI Infrastructure](https://t0.mirantis.com/tags/ai-infrastructure/) · [Security](https://t0.mirantis.com/tags/security/) · [Zero Trust](https://t0.mirantis.com/tags/zero-trust/) · [GPU](https://t0.mirantis.com/tags/gpu/) · [FIPS](https://t0.mirantis.com/tags/fips/) · [Multi-Tenancy](https://t0.mirantis.com/tags/multi-tenancy/) · [LLM Ops](https://t0.mirantis.com/tags/llm-ops/)
